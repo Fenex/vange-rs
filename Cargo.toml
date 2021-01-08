@@ -46,28 +46,28 @@ m3d = { path = "lib/m3d" }
 splay = { path = "lib/splay" }
 tiff = { path = "lib/tiff" }
 # library
-bytemuck = "1"
-byteorder = "1.0"
-cgmath = "0.17"
+bytemuck = "1.4"
+byteorder = "1.4"
+cgmath = { version = "0.18", features= [ "rand" ] }
 futures = "0.3"
 glsl-to-spirv = "0.1"
 log = "0.4"
-rand = "0.6"
-rayon = "1"
+rand = "0.8"
+rayon = "1.5"
 ron = "0.6"
-rust-ini = "0.15"
-serde = "1.0"
-serde_derive = "1.0"
-serde_scan = "0.1"
+rust-ini = "0.16"
+serde = "1.0.118"
+serde_derive = "1.0.118"
+serde_scan = "0.4"
 wgpu = { git = "https://github.com/gfx-rs/wgpu-rs" }
 #wgpu = { path = "../wgpu-rs" }
 #wgpu = "0.4"
 # binaries
-env_logger = "0.7"
+env_logger = "0.8"
 getopts = "0.2"
 obj = "0.10"
 png = "0.16"
-winit = "0.22"
+winit = "0.24"
 
 [patch.crates-io]
 #gfx-hal = { version = "0.6", path = "../gfx/src/hal" }
